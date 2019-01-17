@@ -1,0 +1,48 @@
+.piano {
+  width: 100%;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+}
+
+.track-container {
+  width: 100%;
+  padding: 0;
+  margin: 10px;
+}
+
+.track-container .track {
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  height: 50px;
+  list-style: none;
+  display: inline-block;
+  padding: 0px 10px;
+  width: 16%;
+  margin: 0 0.333333333333%;
+  background-color: rgba(0, 100, 255, 0.6);
+}
+
+.track-container .track .track-length {
+  float: left;
+  vertical-align: bottom;
+  margin: calc(25px - 0.5em) 0;
+  font-weight: bold;
+  color: white;
+}
+
+.track-container .track .btn {
+  float: right;
+  margin: calc(20px - 0.5em) 0;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 50%;
+  color: white;
+  padding: 3px 5px;
+  transition: all 250ms;
+  cursor: pointer;
+}
+
+.track-container .track .delete-track-btn:hover {
+  color: rgb(32, 34, 165);
+  border: 1px solid rgb(32, 34, 165);
+}

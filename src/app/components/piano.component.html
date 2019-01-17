@@ -1,0 +1,9 @@
+<div class="piano">
+  <canvas [id]="id" width="1200" height="250"></canvas>
+  <ul class="track-container">
+    <li class="track" *ngFor="let track of tracks; index as i">
+      <div class="track-length">{{track.trackStrLength}}</div>
+      <button (click)="removeRecording(i)" class="btn delete-track-btn">X</button>
+    </li>
+  </ul>
+</div>
